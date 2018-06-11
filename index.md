@@ -1,36 +1,46 @@
-## Welcome to GitHub Pages
+## Form
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
 
-You can use the [editor on GitHub](https://github.com/yahirah/leadForm/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
 
-### Markdown
+<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<input type=hidden name="oid" value="00D1r0000030O8j">
+<input type=hidden name="retURL" value="http://google.pl">
 
-```markdown
-Syntax highlighted code block
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail" value="awalach@craftware.biz">   -->
+<!--  ----------------------------------------------------------------------  -->
 
-# Header 1
-## Header 2
-### Header 3
+<label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
 
-- Bulleted
-- List
+<label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
 
-1. Numbered
-2. List
+<label for="title">Title</label><input  id="title" maxlength="40" name="title" size="20" type="text" /><br>
 
-**Bold** and _Italic_ and `Code` text
+<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
 
-[Link](url) and ![Image](src)
-```
+<label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+<label for="city">City</label><input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
 
-### Jekyll Themes
+<label for="state">State/Province</label><input  id="state" maxlength="20" name="state" size="20" type="text" /><br>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/yahirah/leadForm/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+<input type="submit" name="submit">
+
+</form>
+
 
 ### Support or Contact
 
